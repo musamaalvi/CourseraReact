@@ -4,7 +4,11 @@ import './App.css';
 function App() {
   return (
     <div className="app">
-     <h1>usama</h1>
+      {/* Side bar */}
+      
+      {/* Feed */}
+
+      {/* widgets */}
     </div>
   );
 }
