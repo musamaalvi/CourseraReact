@@ -10,7 +10,7 @@ import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
 import ListAltIcon from "@material-ui/icons/ListAlt";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
-
+import {Button} from '@material-ui/core';
 
 const Sidebar = () => {
     return (
@@ -30,6 +30,9 @@ const Sidebar = () => {
             <SidebarOption Icon={MoreHorizIcon} text="More" />
 
             {/* button -> tweet  */}
+            <Button variant="outlined" className="sidebar_tweet" fullWidth>
+            Tweet
+            </Button>
         </div>
     );
 }
