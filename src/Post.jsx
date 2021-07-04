@@ -19,15 +19,15 @@ function Post({
 
     return (
         <div className="post">
-            <div classNAme="post__avatar">
+            <div className="post__avatar">
                 <Avatar src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png" />
             </div>
-            <div className="post__body">
+            <div className="post_body">
                 <div className="post__header">
                     <div className="post__headerText">
                         <h3>M Usama Alvi{" "}
-                            <span>
-                                <VerifiedUserIcon classNAme="post__badge" />
+                            <span className="post__headerSpecial"> 
+                                <VerifiedUserIcon className="post__badge" /> @usamaalvi
                             </span>
                         </h3>
                     </div>
