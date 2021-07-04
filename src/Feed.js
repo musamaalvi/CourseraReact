@@ -17,6 +17,7 @@ const Feed = () => {
 
 
             {/* posts */}
+            <Post />
         </div>
 
 
