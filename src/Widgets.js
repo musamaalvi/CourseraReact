@@ -1,5 +1,5 @@
 import './Widgets.css'
-
+import {TwitterTimeLineEmbed, TwitterShareButton, TwitterTweetEmbed} from "react-twitter-embed"
 
 const Widgets = () => {
     return (
