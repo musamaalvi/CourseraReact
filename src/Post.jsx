@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './Post.css'
 import { Avatar } from '@material-ui/core'
 
@@ -8,6 +8,7 @@ import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
 import dp from './assets/dp.jpg'
+
 
 function Post({
     displayName,
@@ -19,9 +20,11 @@ function Post({
     avatar
 }) {
 
-    const [post, setPosts] = useState([]);
+    
 
+   console.log("post", displayName)
     return (
+   
         <div className="post">
             <div className="post__avatar">
                 <Avatar src={avatar} />
