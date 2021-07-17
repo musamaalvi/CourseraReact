@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Post.css'
 import { Avatar } from '@material-ui/core'
 
@@ -14,27 +14,31 @@ function Post({
     username,
     verified,
     timestamp,
-    text
+    text,
+    image,
+    avatar
 }) {
+
+    const [post, setPosts] = useState([]);
 
     return (
         <div className="post">
             <div className="post__avatar">
-                <Avatar src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png" />
+                <Avatar src={avatar} />
             </div>
             <div className="post_body">
                 <div className="post__header">
                     <div className="post__headerText">
-                        <h3>M Usama Alvi{" "}
+                        <h3>{displayName}{" "}
                             <span className="post__headerSpecial"> 
-                                <VerifiedUserIcon className="post__badge" /> @usamaalvi
+                                {verified && <VerifiedUserIcon className="post__badge" /> }@{username}
                             </span>
                         </h3>
                     </div>
                     <div className="post__headerDesc">
-                        <p>Desc of M Usama Alvi</p>
+                        <p>{text}</p>
                     </div>
-                    <img src={dp}></img>
+                    <img src={image}></img>
                     <div className="post__footer">
                         <ChatBubbleOutlineIcon fontSize="small" />
                         <RepeatIcon fontSize="small" />
